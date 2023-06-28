@@ -28,8 +28,8 @@ function App() {
         </Routes>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/chargin" element={<Chargin />} />
+          <Route path="/" element={<Chargin />} />
+          <Route path="/chargin" element={<Home />} />
           <Route path="/fastag" element={<Fastag />} />
           <Route path="/forms" element={<Forms />} />
           <Route path="/replacement" element={<Replacement />} />
