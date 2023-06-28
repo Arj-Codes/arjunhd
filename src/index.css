@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.shadow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0;
+  background: #ffe141;
+  filter: blur(50px);
+}
+
+.shadow-mobile-hand {
+  position: absolute;
+  width: 150px;
+  height: 130px;
+  left: 70px;
+  top: 190px;
+  /* background: #ffe141; */
+  filter: blur(60px);
+}
+
+.shadow-goole-play {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  /* background: #ffe141; */
+  filter: blur(30px);
+}
+
+.shadow-app-store {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  left: 100px;
+  top: 20px;
+  /* background: #ffe141; */
+  filter: blur(35px);
+}
+
+@media (max-width: 768px) {
+  .shadow-mobile-hand {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 120px;
+    top: 60px;
+    background: #09dd6d;
+    filter: blur(80px);
+  }
+
+  .shadow-goole-play {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background: #09dd6d;
+    filter: blur(40px);
+  }
+
+  .shadow-app-store {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 60px;
+    top: 0px;
+    background: #09dd6d;
+    filter: blur(100px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .shadow-mobile-hand {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 120px;
+    top: 140px;
+    background: #09dd6d;
+    filter: blur(80px);
+  }
+
+  .shadow-app-store {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    left: 80px;
+    top: 20px;
+    background: #09dd6d;
+    filter: blur(35px);
+  }
+}
+
+.home-nav-bg {
+  background: rgba(21, 21, 21, 0.3);
+  backdrop-filter: blur(50px);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+.herofastag{
+  filter: blur(100px);
+  
+}
+@media only screen and (min-width: 2000px) {
+  .herofastag {
+    filter: blur(150px);
+  }
+}
+
+#h1{
+  font-weight: 500;
+}
+.guide{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#herohome{
+  background-image: url(../src/assets/images/home/herobg.webp);
+}
+
+#bxshadow{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.shadowbtn{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
