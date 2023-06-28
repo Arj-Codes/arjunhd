@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setActive } from "../../redux/slices/navSlice";
 import { IRootState } from "../../redux/store";
-import { useState } from "react";
+// import { useState } from "react";
 import LogoutIcon from "@mui/icons-material/Logout";
 
 const Modal = () => {

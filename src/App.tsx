@@ -15,9 +15,8 @@ import Replacement from "./containers/fastag/Replacement";
 import Validate from "./containers/fastag/Validate";
 import Rakshaqr from "./pages/Rakshaqr";
 import Modal from "./components/layout/Modal";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 function App() {
-  const [isactive, setIsactive] = useState<boolean>(false);
   return (
     <div className="">
       <Router>

@@ -1,7 +1,3 @@
-import ac_charger_black from "../../assets/images/chargin/ac_charger_black.webp";
-import ac_charger_white from "../../assets/images/chargin/ac_charger_white.webp";
-import ac_charger_stand_right from "../../assets/images/chargin/ac_charger_stand_right.webp";
-import ac_charger_stand_left from "../../assets/images/chargin/ac_charger_stand_left.webp";
 import dc1 from "../../assets/images/chargin/dc_charger_1.webp";
 import dc2 from "../../assets/images/chargin/dc_charger_2.webp";
 import dc3 from "../../assets/images/chargin/dc_charger_3.webp";
