@@ -1,4 +1,4 @@
-import sticker from "../../assets/images/rakshaqr/Artboard.png";
+import sticker from "../../assets/images/rakshaqr/Artboard.webp";
 const Details = () => {
   return (
     <section className="h-fit sm:h-[100vh] xxl:h-[80vh] w-screen section-padding flex justify-center items-center">
@@ -29,7 +29,7 @@ const Details = () => {
             </div>
           </div>
           <div className="right max-h-min sm:w-[50%] flex items-center justify-center sm:justify-end xxl:justify-center order-1 sm:order-2">
-            <img src={sticker} alt="" className="h-[18rem] xxl:h-[30rem]" />
+            <img src={sticker} alt="" className="h-[18rem] xxl:h-[30rem]" loading="lazy"/>
           </div>
         </div>
         <div className="bottom w-full flex items-center justify-center p-3">

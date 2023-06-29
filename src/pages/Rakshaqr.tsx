@@ -1,6 +1,7 @@
 import Benefits from "../containers/rakshaqr/Benefits"
 import Details from "../containers/rakshaqr/Details"
 import Hero from "../containers/rakshaqr/Hero"
+import Works from "../containers/rakshaqr/Works"
 // import Videoplayer from "../containers/rakshaqr/Videoplayer"
 const Rakshaqr = () => {
   return (
@@ -9,6 +10,7 @@ const Rakshaqr = () => {
       <Details />
       {/* <Videoplayer /> */}
       <Benefits />
+      <Works />
     </div>
   )
 }

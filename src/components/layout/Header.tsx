@@ -59,11 +59,23 @@ const Header = () => {
 
   return (
     <ThemeProvider theme={themes}>
-      <div className="nav w-full h-fit p-3 bg-[#090909] relative">
-        <div className="nav__Wrapper flex justify-between rounded-2xl h-[10vh] w-[95%] mx-auto p-3 bg-[#393939] bg-opacity-40">
+      <div
+        className={`nav w-full h-fit p-3 ${
+          active === 2 ? "bg-white" : "bg-[#090909]"
+        }  relative`}
+      >
+        <div
+          className={`nav__Wrapper flex justify-between rounded-2xl w-[90%] mx-auto p-3  ${
+            active === 2 ? "bg-[#090909]" : "bg-[#393939] bg-opacity-40"
+          } `}
+        >
           <div className="left w-fit h-full flex items-center">
             <div className="img">
-              <img src={logo} alt="" className="w-[8rem] sm:w-[6rem] xxl:w-[10rem]" />
+              <img
+                src={logo}
+                alt=""
+                className="w-[15rem] sm:w-[6rem] xxl:w-[10rem]"
+              />
             </div>
           </div>
           <div className="right hidden sm:flex w-fit h-full gap-14">
@@ -79,14 +91,28 @@ const Header = () => {
                 >
                   <h1>{n.name}</h1>
                   {active === n.id && (
-                    <div className={`h-[2px] bg-hd-yellow w-[22px]`}></div>
+                    <div
+                      className={`h-[2px]  ${
+                        active === 2 ? "bg-chargin-green" : "bg-hd-yellow"
+                      }  w-[22px]`}
+                    ></div>
                   )}
                 </div>
               ))}
             </div>
             <div className="right flex items-center gap-4 cursor-pointer xxl:text-2xl">
               <div className="title">
-                <h1 className="text-hd-yellow">Saanvi Joshi</h1>
+                <h1
+                  className={`${
+                    active === 2 ? "text-chargin-green" : "text-hd-yellow"
+                  }`
+                }
+                onClick={()=>{
+                  dispatch(setActive({active:1}));
+                }}
+                >
+                  Saanvi Joshi
+                </h1>
               </div>
               <div className="img">
                 <img src={proflogo} alt="" className="w-[3rem] xxl:w-[5rem]" />

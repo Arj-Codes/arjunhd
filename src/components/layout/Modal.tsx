@@ -60,7 +60,7 @@ const Modal = () => {
         animate={{ y: "0%" }}
         exit={{ y: "-100%" }}
         transition={{ duration: 0.5 }}
-        className="h-screen w-screen bg-[#090909] p-5 flex flex-col justify-between"
+        className="h-screen w-screen bg-[#090909] sm:hidden p-5 flex flex-col justify-between"
       >
         <div className="top w-full flex justify-between items-center">
           <div className="left flex items-center justify-between w-[65%]">

@@ -15,7 +15,6 @@ import Replacement from "./containers/fastag/Replacement";
 import Validate from "./containers/fastag/Validate";
 import Rakshaqr from "./pages/Rakshaqr";
 import Modal from "./components/layout/Modal";
-// import { useState } from "react";
 function App() {
   return (
     <div className="">
@@ -28,8 +27,8 @@ function App() {
         </Routes>
         <Header />
         <Routes>
-          <Route path="/" element={<Chargin />} />
-          <Route path="/chargin" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/chargin" element={<Chargin />} />
           <Route path="/fastag" element={<Fastag />} />
           <Route path="/forms" element={<Forms />} />
           <Route path="/replacement" element={<Replacement />} />

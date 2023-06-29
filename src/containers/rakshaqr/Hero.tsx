@@ -1,6 +1,6 @@
 import sticker from "../../assets/images/rakshaqr/Rakshasticker2.webp";
-import circle1 from "../../assets/images/rakshaqr/Grouptop.png"
-import circle2 from "../../assets/images/rakshaqr/Groupbottom.png"
+import circle1 from "../../assets/images/rakshaqr/Grouptop.webp"
+import circle2 from "../../assets/images/rakshaqr/Groupbottom.webp"
 const Hero = () => {
   return (
     <div className="md:h-[88vh] p-3 w-full bg-[#000000] relative flex flex-col sm:flex-row justify-around items-center">
@@ -24,17 +24,19 @@ const Hero = () => {
       </div>
       <div className="right order-1 sm:order-2 w-[95%] mx-auto sm:w-[40%] xl:w-[35%] flex justify-center relative">
         <div className="raksha__wrapper w-[80vw] sm:w-[40vw] lg:w-[30vw] xl:w-[25vw] xxl:w-[30vw] bg-[#090909] bg-opacity-80 p-10 rounded-3xl flex items-center justify-center">
-          <img src={sticker} alt="" />
+          <img src={sticker} alt="" loading="lazy" />
         </div>
         <img
           src={circle1}
           alt=""
           className="absolute top-0 left-0 sm:-left-4 md:-left-9 lg:left-3 xl:left-8 z-10 w-[5rem] sm:w-[4rem] md:w-[5rem]"
+          loading="lazy"
         />
         <img
           src={circle2}
           alt=""
           className="absolute -bottom-9 sm:-bottom-5 md:-bottom-9 right-16 sm:right-10 lg:right-16 xl:right-24 z-10 w-[5rem] sm:w-[4rem] md:w-[5rem]"
+          loading="lazy"
         />
       </div>
     </div>

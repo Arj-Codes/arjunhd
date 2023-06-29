@@ -1,10 +1,10 @@
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import pic1 from "../../assets/images/rakshaqr/id1.png";
-import pic2 from "../../assets/images/rakshaqr/id2.png";
-import pic3 from "../../assets/images/rakshaqr/id3.png";
-import pic4 from "../../assets/images/rakshaqr/id4.png";
-import pic5 from "../../assets/images/rakshaqr/id5.png";
-import mobile from "../../assets/images/rakshaqr/mobile.png";
+import pic1 from "../../assets/images/rakshaqr/id1.webp";
+import pic2 from "../../assets/images/rakshaqr/id2.webp";
+import pic3 from "../../assets/images/rakshaqr/id3.webp";
+import pic4 from "../../assets/images/rakshaqr/id4.webp";
+import pic5 from "../../assets/images/rakshaqr/id5.webp";
+import mobile from "../../assets/images/rakshaqr/mobile.webp";
 const Benefits = () => {
   interface benefititemsProp {
     id: number;
@@ -49,7 +49,12 @@ const Benefits = () => {
         <div className="top w-full my-3">
           <div className="top__wrapper px-3 rounded-3xl bg-[#0b0b0b] md:w-[95%] mx-auto flex flex-col md:flex-row justify-center items-center">
             <div className="left order-2 md:order-1 w-full md:w-[30%] flex items-center justify-center md:items-end md:justify-end">
-              <img src={mobile} alt="" className="w-[15rem] xxl:w-[30rem]" />
+              <img
+                src={mobile}
+                alt=""
+                className="w-[15rem] xxl:w-[30rem]"
+                loading="lazy"
+              />
             </div>
             <div className="right order-1 md:order-2 w-full md:w-[65%] flex flex-col p-5 gap-2">
               <div className="title">
@@ -107,7 +112,12 @@ const Benefits = () => {
             {benitems.map((b) => (
               <div className="eachitem p-5 rounded-3xl flex flex-col items-center justify-center gap-3 xxl:gap-8 border border-black w-[10rem] h-[10rem] xxl:w-[20rem] xxl:h-[20rem]">
                 <div className="img">
-                  <img src={b.img} alt="" className="w-[3rem] xxl:w-[6rem]" />
+                  <img
+                    src={b.img}
+                    alt=""
+                    className="w-[3rem] xxl:w-[6rem]"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="text">
                   <h1 className="text-center text-sm xxl:text-2xl">{b.text}</h1>

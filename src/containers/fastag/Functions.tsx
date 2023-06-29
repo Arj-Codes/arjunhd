@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import fimg from "../../assets/images/fastag/functions.png";
+import fimg from "../../assets/images/fastag/functions.webp";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { useNavigate } from "react-router-dom";
 const Functions = () => {
@@ -75,7 +75,10 @@ const Functions = () => {
                       key={c.id}
                     >
                       <div className="name">
-                        <h1 id="h1" className="text-sm sm:text-[17px] xxl:text-3xl">
+                        <h1
+                          id="h1"
+                          className="text-sm sm:text-[17px] xxl:text-3xl"
+                        >
                           {c.text}
                         </h1>
                       </div>
@@ -88,8 +91,9 @@ const Functions = () => {
                           <NavigateNextIcon
                             style={{ color: "ffe141" }}
                             fontSize="large"
-                            
-                            onClick={()=>{navigate("/replacement")}}
+                            onClick={() => {
+                              navigate("/replacement");
+                            }}
                           />
                         ) : (
                           <NavigateNextIcon
@@ -107,7 +111,7 @@ const Functions = () => {
           </div>
         </div>
         <div className="right sm:w-[40%] order-1 sm:order-2">
-          <img src={fimg} alt="" className="w-fit" />
+          <img src={fimg} alt="" className="w-fit" loading="lazy" />
         </div>
       </div>
     </div>

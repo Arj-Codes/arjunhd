@@ -31,7 +31,7 @@ const Dcchargers = () => {
   ];
   return (
     <div className="h-fit w-full section-padding">
-      <div className="wrapper w-full flex flex-col gap-8">
+      <div className="wrapper w-full flex flex-col gap-8 p-10">
         <div className="items w-full flex flex-col md:flex-row gap-10">
           {acchargeritems.map((a) => (
             <div
@@ -44,12 +44,13 @@ const Dcchargers = () => {
                 <img
                   src={a.img}
                   alt=""
-                  className="w-[8rem] md:w-[12rem] xxl:w-[25rem]"
+                  className="w-[25rem] md:w-[12rem] xxl:w-[25rem]"
+                  loading="lazy"
                 />
               </div>
               <div className="name flex flex-col mb-5">
-                <h1 className="text-sm md:text-lg xxl:text-4xl">{a.name}</h1>
-                <h1 className="text-lg md:text-2xl xxl:text-5xl font-[800]">
+                <h1 className="text-6xl md:text-lg xxl:text-4xl">{a.name}</h1>
+                <h1 className="text-8xl md:text-2xl xxl:text-5xl font-[800]">
                   {a.power}
                 </h1>
               </div>
@@ -60,7 +61,7 @@ const Dcchargers = () => {
           ))}
         </div>
         <div className="title w-full flex items-center justify-center lg:justify-start lg:relative">
-          <h1 className="text-5xl lg:text-5xl xl:text-6xl xxl:text-9xl font-[800] lg:absolute -top-28 xxl:-top-80">
+          <h1 className="text-9xl lg:text-5xl xl:text-6xl xxl:text-9xl font-[800] lg:absolute -top-28 xxl:-top-80">
             {" "}
             <span className="text-chargin-green">DC</span> Chargers{" "}
           </h1>
